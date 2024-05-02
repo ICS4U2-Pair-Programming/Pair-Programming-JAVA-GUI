@@ -2,6 +2,8 @@
 import java.util.Random;
 import javax.swing.JOptionPane;
 public class GuessNumberGame {
+        public static final int ScoreGuess = 0;
+
         public static void GuessingGame(){
             Random rand = new Random();
             int number = rand.nextInt(6900);
@@ -25,8 +27,7 @@ public class GuessNumberGame {
                     win = true;
                 }
             }
-            final int ScoreGuess = score - (tries * 500); // calculates your score
-            System.out.println(ScoreGuess);
+            int ScoreGuess = score - (tries * 500); // calculates your score
             JOptionPane.showMessageDialog(null, "Your score was " +ScoreGuess);
         }
     }
