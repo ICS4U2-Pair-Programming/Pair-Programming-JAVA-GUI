@@ -6,7 +6,7 @@ public class GuessNumberGame {
 
         public static void GuessingGame(){
             Random rand = new Random();
-            int number = rand.nextInt(6900);
+            int number = rand.nextInt(10);
             boolean win = false;
             int score = 10000;
             int tries = 0;
@@ -29,5 +29,6 @@ public class GuessNumberGame {
             }
             int ScoreGuess = score - (tries * 500); // calculates your score
             JOptionPane.showMessageDialog(null, "Your score was " +ScoreGuess);
+            ReturnMenu.Return();
         }
     }
