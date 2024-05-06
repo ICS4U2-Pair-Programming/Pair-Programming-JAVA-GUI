@@ -5,6 +5,6 @@ public class Main {
 
     String name = JOptionPane.showInputDialog("Please enter your name to continue");
     JOptionPane.showMessageDialog(null, "Hello " +name +" and welcome to our GUI minigames!");
-    MainMenu.MainMenu();
+    MainMenu.MainMenu(); //calls main menu so that the GUi wont repeat asking your users name
     }
 }

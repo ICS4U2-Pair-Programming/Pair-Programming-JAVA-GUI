@@ -6,7 +6,7 @@ public class GuessNumberGame {
 
         public static void GuessingGame(){
             Random rand = new Random();
-            int number = rand.nextInt(10);
+            int number = rand.nextInt(10); //how large you want the user to guess
             boolean win = false;
             int score = 10000;
             int tries = 0;
