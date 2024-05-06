@@ -15,7 +15,7 @@ public class MainMenu {
         GuessNumberGame.GuessingGame();
         }
         if(n == 1){ 
-            System.out.println("player want to play reaction");
+            System.out.println("player want to play reaction"); // to be changed when reaction time code is finished
         }
     }
 }
