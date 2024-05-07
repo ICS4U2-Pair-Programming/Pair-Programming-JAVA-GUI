@@ -4,7 +4,7 @@ import javax.swing.JOptionPane;
 public class GuessNumberGame {
         public static final int ScoreGuess = 0;
 
-        public static void GuessingGame(){
+        public static void GuessingGame() throws InterruptedException{
             Random rand = new Random();
             int number = rand.nextInt(10); //how large you want the user to guess
             boolean win = false;
